@@ -1,0 +1,184 @@
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .main-page h1 {
+    font-size: 30px;
+  }
+  .main-page h2 {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bottombar-content {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .content-intro {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .content-intro-header {
+    padding-top: 50px;
+  }
+
+  .bottombar {
+    width: 80%;
+    right: 10%;
+    left: 10%;
+  }
+
+  .bottombar-header-wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .content-stage {
+    display: inline-flex;
+    margin-left: 0;
+    height: calc(100vh - 110px);
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar {
+    left: 35%;
+    right: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1120px) {
+  .bottombar-header-wrapper {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .bottombar-content {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+  }
+  .content-intro {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .bottombar-content {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+  }
+
+  .sidebar {
+    left: 20%;
+    right: 0;
+    bottom: 0;
+  }
+  .sidebar-content {
+    padding: 20px;
+  }
+  .sidebar {
+    opacity: 1;
+  }
+  .investments span {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 644px) {
+  .bottombar {
+    top: 93vh;
+    width: 90%;
+    right: 5%;
+    left: 5%;
+  }
+  .bottombar-header-wrapper {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .content-intro-header {
+    padding-top: 0px;
+  }
+
+  h1 {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    display: block;
+  }
+  .content-intro {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .content-intro-header {
+    padding-top: 0px;
+  }
+
+  .bottombar-header-wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .bottombar-title h3 {
+    font-size: 16px;
+  }
+
+  .bottombar-content {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+  }
+  .bottombar-content-explained {
+    font-size: 15px;
+  }
+  .bottombar-content-results {
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  .bottombar-content-results span {
+    font-size: 35px;
+  }
+
+  .content-stage {
+    display: inline-block;
+    margin-left: 0;
+    min-height: 700px;
+    width: 100%;
+  }
+
+  h1 {
+    padding-bottom: 0px;
+    font-size: 28px;
+  }
+
+  .sidebar {
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .sidebar-content {
+    padding: 15px;
+  }
+  .sidebar {
+    opacity: 1;
+  }
+  .timeline {
+    margin: 0 0%;
+    padding: 0px 0 40px 100px;
+  }
+  .timeline ul li {
+    margin-right: 0px;
+  }
+  .investments span {
+    font-size: 25px;
+  }
+}

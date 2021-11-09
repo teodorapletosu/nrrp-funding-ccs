@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Belgium</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="css/all.css?v=1.0.0" />
+    <link rel="stylesheet" href="webfonts/neue/neuehaas.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="js/radarChart.js"></script>
+    <script>
+      $(document).ready(function () {
+        /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+
+        //////////////////////////////////////////////////////////////
+        //////////////////////// Set-Up //////////////////////////////
+        //////////////////////////////////////////////////////////////
+
+        var margin = { top: 70, right: 0, bottom: 80, left: 0 },
+          width = $(window).width(),
+          height = 320;
+
+        //////////////////////////////////////////////////////////////
+        ////////////////////////// Data //////////////////////////////
+        //////////////////////////////////////////////////////////////
+        function scale(x) {
+          return x / 100;
+        }
+
+        var data = [
+          [
+            //Belgium
+            {
+              axis: "Cultural heritage",
+              value: scale(71.77),
+              label: "&euro; 59.5 mn"
+            },
+            {
+              axis: "Digitisation / innovation",
+              value: scale(22.31),
+              label: "&euro; 18.5 mn"
+            },
+            {
+              axis: "Creative industries",
+              value: 0
+            },
+            { axis: "Audiovisual", value: scale(6.03), label: "&euro; 5 mn" },
+            {
+              axis: "Employment in the cultural sector",
+              value: 0
+            },
+            {
+              axis: "Cultural institutions",
+              value: 0
+            }
+          ]
+        ];
+        //////////////////////////////////////////////////////////////
+        //////////////////// Draw the Chart //////////////////////////
+        //////////////////////////////////////////////////////////////
+
+        var color = d3.scale.ordinal().range(["#b83f04"]);
+
+        var radarChartOptions = {
+          w: width,
+          h: height,
+          margin: margin,
+          maxValue: 0.8,
+          levels: 8,
+          roundStrokes: true,
+          color: color
+        };
+        //Call function to draw the Radar chart
+        RadarChart(".radarChart", data, radarChartOptions);
+      });
+    </script>
+  </head>
+
+  <body class="sidebar-page">
+    <h1>Belgium</h1>
+    <h2>A focus on the rehabilitation of cultural infrastructures</h2>
+
+    <h3>
+      &euro; 82.9 million for CCS / <br />
+      1.4% of the total national recovery budget
+    </h3>
+    <p>
+      The representation below shows by comparison the amounts dedicated to
+      strategic areas of the cultural sector and their shares of the total
+      specific budget for CCS in Belgium's NRRP.
+    </p>
+    <div class="radarChart"></div>
+  </body>
+</html>

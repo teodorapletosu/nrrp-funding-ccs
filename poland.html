@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>Poland</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="css/all.css?v=1.0.0" />
+    <link rel="stylesheet" href="webfonts/neue/neuehaas.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="js/radarChart.js"></script>
+    <script>
+      $(document).ready(function () {
+        /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+
+        //////////////////////////////////////////////////////////////
+        //////////////////////// Set-Up //////////////////////////////
+        //////////////////////////////////////////////////////////////
+
+        var margin = { top: 70, right: 0, bottom: 80, left: 0 },
+          width = $(window).width(),
+          height = 320;
+
+        //////////////////////////////////////////////////////////////
+        ////////////////////////// Data //////////////////////////////
+        //////////////////////////////////////////////////////////////
+        function scale(x) {
+          return x / 100;
+        }
+
+        var data = [
+          [
+            //Poland
+            {
+              axis: "Cultural heritage",
+              value: 0
+            },
+            {
+              axis: "Digitisation / innovation",
+              value: 0
+            },
+            {
+              axis: "Creative industries",
+              value: scale(100),
+              label: "&euro; 95 mn"
+            },
+            { axis: "Audiovisual", value: 0 },
+            {
+              axis: "Employment in the cultural sector",
+              value: 0
+            },
+            {
+              axis: "Cultural institutions",
+              value: 0
+            }
+          ]
+        ];
+        //////////////////////////////////////////////////////////////
+        //////////////////// Draw the Chart //////////////////////////
+        //////////////////////////////////////////////////////////////
+
+        var color = d3.scale.ordinal().range(["#EDC951"]);
+
+        var radarChartOptions = {
+          w: width,
+          h: height,
+          margin: margin,
+          maxValue: 1,
+          levels: 10,
+          roundStrokes: true,
+          color: color
+        };
+        //Call function to draw the Radar chart
+        RadarChart(".radarChart", data, radarChartOptions);
+      });
+    </script>
+  </head>
+
+  <body class="sidebar-page">
+    <h1>Poland</h1>
+    <h2>Towards the modernisation and growth of the creative industries</h2>
+
+    <h3>
+      &euro; 95 million for CCS / <br />
+      0.26% of the total national recovery budget
+    </h3>
+    <p>
+      The representation below shows by comparison the amounts dedicated to
+      strategic areas of the cultural sector and their shares of the total
+      specific budget for CCS in Poland's NRRP.
+    </p>
+    <div class="radarChart"></div>
+  </body>
+</html>

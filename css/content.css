@@ -1,0 +1,134 @@
+body {
+  font-family: "Neue Haas Unica", sans-serif;
+}
+.sidebar-page {
+  -webkit-overflow-scrolling: touch;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 200;
+  color: #858585;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 200;
+  color: #ec1090;
+  padding-bottom: 40px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+  padding-bottom: 20px;
+  font-weight: 200;
+  color: #3d3d3d;
+}
+
+a {
+  text-decoration: underline;
+  color: #3d3d3d;
+}
+
+strong {
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 200;
+  color: #858585;
+  padding-bottom: 40px;
+}
+.indent {
+  margin-left: 50px;
+  line-height: 3em;
+}
+.indent span {
+  color: #037eac;
+  font-size: 35px;
+}
+
+.investments {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.7em;
+}
+.investments table tr td:first-child,
+.investments table tr td:last-child {
+  width: 50%;
+}
+.investments table tr th:first-child,
+.investments table tr th:last-child {
+  width: 50%;
+}
+.investments table tr td {
+  padding-bottom: 40px;
+  color: #3d3d3d;
+}
+.investments table tr td:first-child {
+  padding-right: 20px;
+}
+.investments span {
+  color: #037eac;
+  font-size: 30px;
+}
+.investments table th {
+  font-size: 23px;
+  text-align: left;
+  color: #858585;
+  padding-bottom: 40px;
+}
+.investments {
+  padding-bottom: 50px;
+}
+ul {
+  font-size: 18px;
+  font-weight: 200;
+  color: #3d3d3d;
+  margin-left: 50px;
+  list-style-type: circle;
+  line-height: 1.5em;
+}
+
+.allocation {
+  padding-bottom: 50px;
+}
+.flexibility {
+  padding-bottom: 50px;
+}
+.guidelines h3 {
+  padding-bottom: 20px;
+}
+.guidelines p {
+  padding-bottom: 40px;
+}
+
+.missions span {
+  color: #037eac;
+  font-size: 25px;
+  line-height: 1.5em;
+  font-weight: 200;
+  margin-left: 50px;
+}
+.radarChart svg {
+  font-family: "Neue Haas Unica", sans-serif;
+  font-weight: 200;
+}
+
+.legend {
+  font-size: 14px;
+  font-weight: 400;
+}
+.tooltip {
+  font-size: 12px;
+}
